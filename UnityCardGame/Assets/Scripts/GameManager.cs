@@ -71,9 +71,20 @@ public class GameManager : MonoBehaviour
     /// </summary>
     private void GameWinner()
     {
-        
+        if (player == pc)
+        {
+            print("same!");
+
+        }
+        else if (player > pc)
+        {
+            print("player wins!!");
+        }
+        else if (player < pc)
+        {
+            print("pc wins!!");
+        }
+
+        #endregion
     }
-    #endregion
 
-
-}
